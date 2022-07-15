@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Righteous&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(65,184,131,1)0%, rgba(0,212,255,1) 100%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    border: 2px solid #FFF;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+}
+
+.listar-tarefas{
+    background-color: #FFF;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.listar-tarefas input{
+
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+
+}
+
+.listar-tarefas input:focus{
+
+    outline: none;
+    border-color: #41b883;
+}
+
+.listar-tarefas button{
+
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #FFF;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.tarefas{
+    background-color: #FFF;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.error{
+    border: 2px solid red !important;
+}
+
+.item-tarefa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+
+.item-tarefa i{
+background-color: #41b883;
+color: #FFF;
+padding: 12px;
+border-radius: 5px;
+}
+
+.item-tarefa i:hover{
+
+    cursor: pointer;
+
+}
+
+.completed{
+   color: blue;
+}
+
+.error::placeholder{
+    color: red;
+}
+
+footer{
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+}
+
+a{
+ text-decoration: none;
+ color: rgb(34, 32, 32);
+}
+
+a:hover{
+    color: #FFF;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   padding-block: .5rem;
+}
